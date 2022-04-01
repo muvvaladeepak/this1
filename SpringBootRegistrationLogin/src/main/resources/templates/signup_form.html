@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>User Registration - Sign Up </title>
+<link rel="dtylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+<script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+<style>
+*{
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+}
+.hero 
+{
+	height:100%;
+	width:100%;
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(regform_bg.jpg);
+	background-position: center;
+	background-size:cover;
+	position:absolute;
+}
+.logo
+{
+	margin:50px auto;
+	text-align:center;
+	width:150px;
+	height:75px;
+	position:absolute;
+	margin:0 12px;
+	box-shadow:0 0 5px 0 #000;
+	cursor:pointer;
+	border-radius:45%;
+	top:100px;
+	left:110px;
+}
+
+.form-box
+{
+	width:400px;
+	height:500px;
+	position:relative;
+	margin: 6% auto;
+	background :#fff;
+	padding: 5px;
+	overflow:hidden;
+}
+.button-box
+{
+	width: 100px;
+	margin: 35px auto;
+	position: relative;
+	box-shadow: 0 0 15px 9px #ff61241f;
+	border-radius: 30px;
+}
+.toggle-btn
+{
+	padding:10px 20px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+}
+#btn
+{
+	top:0;
+	left:0;
+	position: absolute;;
+	width:100px;
+	height:100%;
+	background: linear-gradient(to right,#6600ff,#ff99cc);
+	border-radius:25px;
+	transition: .5s;
+}
+.input-group
+{
+	top:180px;
+	position: absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-field
+{
+	width:100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid #999;
+	outline:none;
+	background:transparent;
+}
+.submit-btn
+{
+	width:85%;
+	padding:10px 30px;
+	cursor:pointer;
+	display:block;
+	margin:auto;
+	background:linear-gradient(to right,#6600ff,#ff99cc);
+	border:0;
+	outline:none;
+	border-radius:30px;
+	color:#fff;
+}
+.check-box
+{
+	margin:30px 10px 30px 0;
+}
+span{color:#777;
+	 font-size:12px;
+	 bottom:65px;
+	 position:absolute;
+	 }
+#register{left:50px}
+
+</style>
+
+</head>
+<body>
+<img src="" class="hero" th:src="@{/image/regform_bg.jpg}"/>
+	<div class="hero">        <!bg-image-->
+		<div class="form-box">
+		<img src="" class="logo" th:src="@{/image/logo.jpg}"/>
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="register()"><b>REGISTER</b></button>
+			</div>
+			
+			<form method="post" th:action="@{/process_register}" th:object="${user}" id="register" class="input-group">
+				<input type="text" class="input-field" th:field="*{firstName}" placeholder="First name" required minlength="2" maxlength="20">
+				<input type="text" class="input-field" th:field="*{lastName}" placeholder="Last name" required minlength="2" maxlength="20">
+				<input type="email" class="input-field" th:field="*{email}" placeholder="Enter email-id" required>
+				<input type="password" class="input-field" th:field="*{password}" placeholder="Enter password" required minlength="6" maxlength="10">
+				<input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+				<button type="submit" value="submit" class="submit-btn"><b>REGISTER</b></button>
+			</form>
+			</div>
+			</div>
+</body>
+</html>

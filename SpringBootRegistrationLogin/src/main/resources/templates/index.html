@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Welcome to Sampatthi Home</title>
+	<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+	<script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+	<style>
+	body{background: #fff;}
+	.hero 
+{
+	height:100%;
+	width:100%;
+	background-image:url(regform_bg.jpg);
+	background-position: center;
+	background-size:cover;
+	position:absolute;	
+	top:100px;
+}
+.logo
+{
+	margin:50px auto;
+	text-align:center;
+	width:300px;
+	height:170px;
+	position:absolute;
+	margin:0 12px;
+	box-shadow:0 0 50px 0 #ff99cc;
+	cursor:pointer;
+	border-radius:45%;
+	top:150px;
+	left:600px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
+  padding:20px;
+  margin-top:80px;
+  margin-left:600px;
+  top:200px;
+  left:10px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container {
+  padding: 2px 16px;
+}
+
+
+h2{
+position:absolute;
+left:30%;
+top:-7%;
+transform:translate(-50%, -50%);
+width:1000px;
+height:50px;
+border-bottom:5px solid #000;
+line-height:45px;
+background: #fff;
+overflow:hidden;
+
+}
+
+h2 span
+{
+color:#fff;
+font-size: 30px;
+font-family:arial;
+background: #000;
+display: inline-block;
+padding:6px 20px;
+text-transform:uppercase;
+}
+
+h2 span:before{
+position:absolute;
+content:"";
+width:140%;
+height:90%;
+background:#000;
+z-index:-1;
+transform:rotate(45deg);
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+position: absolute;
+top: -100px;
+right: -35px;
+}
+.nav-links{
+right:10%;
+text-align:right;
+background:transparent;
+padding: 1px 30px;
+border-bottom-left-radius:18px;
+position:relative;
+}
+.nav-links ul li
+{
+list-style:none;
+display:inline-block;
+padding:10px 25px;
+}
+.nav-links ul li a
+{
+color:#000;
+text-decoration: none;
+font-size:18px;
+}
+.content
+{
+width:1200px;
+height:auto;
+margin:auto;
+color:#fff;
+position:relative;
+}
+.content .par
+{
+padding-left:20px;
+padding-bottom:25px;
+font-family:Arial;
+letter-spacing:1.2px;
+line-height:30px;
+}
+.content h1{
+font-family:'Times New Roman';
+font-size:50p;
+padding-left:2opx;
+margin-top:30%;
+letter-spacing:2px;
+}
+.content span
+{
+color: #ff7200;
+font-size:60px;
+}
+
+</style>
+</head>
+<body >
+<div>
+<img src="" class="hero" th:src="@{/image/regform_bg.jpg}"/>
+<img src="" class="logo" th:src="@{/image/logo.jpg}"/>
+</div>
+<div class="hero">
+	<div class="container text-center">
+	    <div class="head"><h2><span>ONLINE REAL-ESTATE MANAGEMENT SYSTEM</span></h2></div>
+	  <nav>
+	    <div class="nav-links">
+	    <ul>
+	    	<li><a th:href="@{/login}"><b>LOGIN</b></a></li>
+	    	  <li><a th:href="@{/register}"><b>REGISTER</b></a></li>	    
+	    </ul>	
+	    </div>    
+	    </nav>		
+	</div>
+	<div class="content">
+		<h1><b>THE KEYS TO YOUR <br> <span>DREAM</span></b></h1>
+		<p class="par"><b>Search.See.Love<br>
+		The best investment on earth is earth<br>
+		Don't wait to buy real estate.Buy real estate and wait.</b></p>
+		
+		
+	</div>
+</div>
+
+	
+</body>
+</html>

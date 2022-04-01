@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+	<script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+  <title></title>
+ 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+  <!----swiper jsCSS-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+   <style>
+   .first{
+   height:320px;
+   width:1600px;
+   background-image: url("83155.jpg");
+   background-position: center;	
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+ }
+
+	 
+ .container{
+ margin-top:-300px;
+ margin-left:170px;
+ background-color:white;
+    position: absolute;
+ }
+ 
+ .well{
+  margin-left:500px;
+  margin-top:150px;
+  }
+ .logo{
+ height:270px;
+ width:350px;
+ margin-top:-80px;
+ margin-left:300px;
+ border-radius:30px 30px 30px 30px;
+ position: absolute;
+ 
+ }
+    #property-slider.swiper {
+      width: 100%;
+      height: 100%;
+    }
+    :root
+{
+    --color-primary:rgb(10, 33, 133);
+    --color-secondary:#314862!important;
+    --color-acent:#193F6A;
+    --font-poppins:'Poppins':serif;
+}
+.bg-primary
+{
+    background-color: var(--color-primary);
+}
+.color-primary
+{
+    color: var(--color-primary);
+}
+.bg-secondary
+{
+    background-color: var(--color-primary);
+}
+.color-secondary
+{
+    color: var(--color-secondary);
+}
+.bg-acent
+{
+    background-color: var(--color-acent);
+}
+.color-acent{
+    color: var(--color-acent);
+    color: #ffffff;
+    box-shadow: none;
+}
+
+.btn-theme{
+    box-shadow: none;
+    margin: 0;
+    font-family: var(--font-poppin);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    padding: 8px 30px;
+    border-radius:30px 30px 30px 30px;
+}
+.btn-theme:hover{
+    background-color: var(--color-acent);
+    color: #ffffff;
+    box-shadow: none;
+    transform: 0.5s ease;
+}
+.btnbtn-theme-2{
+    box-shadow:0 10px 20px 0px rgb(34 137 255/52%);
+    margin: 0;
+    font-family: var(--font-poppin);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    padding: 8px 20px;
+    border-radius:30px  ;
+
+}
+.btnbtn-theme-2:hover{
+    background-color: var(--color-acent);
+    color: #ffffff;
+    box-shadow: none;
+    transform: 0.5s ease;
+}
+.btnbtn-play{
+    box-shadow:none;
+    margin:0;
+    font-family: var(--font-poppin);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    background-color: var(--color-secondary);
+    color: #ffffff;
+    padding:10px 16px;
+    border-radius:100% ;
+    transition: 0.5s ease;
+
+}
+.btnbtn-play:hover{
+    background-color: var(--color-acent);
+    color: var(--color-primary);
+    box-shadow: none;
+}
+/*hero banners*/
+#hero-banner{
+    width: 100%;
+    padding: 100px;
+    color: var(--color-secondary);
+    font-family: var(--font-Poppin);
+
+}
+#hero-banner p{
+font-weight: 400;
+}
+#hero-banner.image{
+    border-radius: 50px 0px 50px 50px;
+    overflow: hidden;
+
+}
+/*Seaech*/
+#search-section.search-area
+{
+    border-radius: 100px;
+    padding: 20px 50px ;
+    font-family: var(--font-Poppin);
+}
+#search-section.search-area select
+{
+    padding: 5px  ;
+    border: none;
+    outline: none;
+    width:80%;
+    margin-top: 10px;
+}
+#search-section.search-area input
+{
+     
+    border: 1px solid #ffffff;
+    outline: none;
+   
+}
+#search-section.search-area input:focus
+{
+    outline-style: none;
+    box-shadow: none;
+    border: 1px solid var(--color-secondary);
+   
+}
+#search-section.search-area input button btn-theme
+{
+    border-radius: 30px;
+    padding: 10px 30px;
+
+}
+.bhk1{
+height:400px;
+width:300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border-radius:20px;
+margin-left:20px;
+
+}
+.bhk2{
+height:400px;
+width:300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border-radius:20px;
+margin-left:20px;
+
+}.bhk3{
+height:400px;
+width:300px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+border-radius:20px;
+margin-left:20px;
+
+}
+.par{
+padding:50px;
+height:410px;
+display:flex;
+text-align:center;
+align-items:center;
+margin-left:200px;
+position: absolute;
+background-color:white;
+
+}
+.about{
+display:flex;
+width:100%;
+color:white;
+background-color: black;
+padding-left:200px;
+
+}
+.life1{
+ height:200px;
+ width:200px;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ border-radius:10px;
+ margin-left:10px;
+}
+.life3{
+ height:100px;
+ width:200px;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ border-radius:10px;
+ margin-left:13px;
+ background-color:blue;
+}
+
+
+
+
+.life{
+display:flex;
+margin-left:100px;
+padding-bottom:20px;
+}
+
+.Buy_A_home{
+height:500px;
+background-color:#BBDEFB;
+}
+.Reant_A_Home{
+height:500px;
+background-color:#C5CAE9;
+}
+.Recomanded_Propertys{
+background-color:#D1C4E9;
+height:500px;
+
+}
+.Handpicked_Residential_Projects{
+background-color:#E1BEE7;
+height:500px;
+
+}
+.Rental_Homes_for_Everyone{
+
+background-color:#F8BBD0;
+height:500px;
+
+}
+.Handpicked_Commercial_Projects{
+background-color:#FFCDD2;
+height:500px;
+
+}
+
+#property-slider.swiper{
+ 
+  width:100%;
+  height:100%;
+}
+
+.container1{
+   position: absolute;
+   width:100%;
+   height:500px;
+   padding-bottom:20px;
+ 
+}
+.container4{
+padding:100px;
+   position: absolute;
+   width:100%;
+   height:400px;
+   padding-bottom:20px;
+ background-color:white;
+ 
+}
+.con5{
+height:500px;
+}
+.par1{
+margin-top:50px;
+height:300px;
+width:300px;
+
+}
+.qwe{
+margin-top:50px;
+
+}
+
+.prefinal{
+height:500px;
+
+
+}
+.final{
+padding:30px;
+position:absolute;
+background:#FCE4EC;}
+p{
+font-size:20px;
+font-family:Times New Roman;
+}
+h3{
+color:red;
+}
+.hurry
+{
+animation:blink 0.5s linear infinite;
+animation:blink 0.5s linear infinite;
+animation:blink 0.5s linear infinite;
+position:absolute;
+right:100px;
+top:400px;
+}
+.man
+{
+height:15%;
+animation:blink 0.5s linear infinite;
+animation:blink 0.5s linear infinite;
+animation:blink 0.5s linear infinite;
+position:absolute;
+left:100px;
+top:400px;
+}
+
+
+@keyframes blink
+{
+0% {opacity:1;}
+50% {opacity:0;}
+100% {opacity:1;}
+}
+
+
+
+
+  </style>
+</head>
+<body>
+<img src=" " class="hurry" th:src="@{/image/hurry.png}"/>
+<img src=" " class="man" th:src="@{/image/man.png}"/>
+<div class="first"><img src="" class="first" th:src="@{/image/83155.jpg}"/>
+  <div class="container">
+      <!--navbar-->
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"><span class="color-primary"></span><b>SAMPATTHI</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+          aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fas fa-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+
+          <!-- Links -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link active" href="#Buy_A_Home"><b>Buy a Home</b>
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Reant_A_Home"><b>Rent a Home</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Recomanded_Propertys"><b>Recommended Properties</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Handpicked_Residential_Projects"><b>Affordable Homes</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#final"><b>Contact us</b></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" th:href="@{/logout}"><b>Sign Out</b></a>
+              <!--<button class="button_signout" type="submit" th:href="@{/index}">SIGN OUT</button>-->
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div> 
+    <div class="logo">
+    <img src="" class="logo" th:src="@{/image/logo.jpg}"/>
+    </div>
+    <div class="well">
+    <h1>
+      Welcome  <b>[[${#request.userPrincipal.principal.fullName}]]</b>
+    </h1>
+   </div>
+   <div class="heart">
+   
+       <div class="Buy_A_home" id="Buy_A_home">
+   <h1><b>Buy a Home</b></h1>
+      <div class="container1">
+      <!---property listslider here--->
+      <div style=" width: 100%;  height: 400px;  margin-top:50px; " id=""
+        class="property-slider">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div style="padding: 10px;background-color: #ffffff; border-radius: 0px 30px 0px 30px; color: #000000;"
+                class="property-list shadow">
+                <div class="image"><img src="" class="life1" th:src="@{/image/RP9.jpg}"/>
+                  <img style="width:100%;  border-radius: 0px 30px 0px 30px; overflow: hidden;margin-bottom: 10px;"
+                    src="RP3.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">Rs.55Lakh</h4>
+                </div>
+                <div class="d.flex justify-content-between">
+                  <div class="item">
+                    <h4 class="h5 m-O">Home</h4>
+                    <p style="font-weight:500;" class="m-O">Hyderabad,Telangana</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mr-2 align-self-center"></i>
+                    <span class="mr-3">3</span>
+                    <i class="fas fa-bath mr-2 align-self-center"></i>
+                    <span>2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div style="padding: 10px;background-color: #ffffff; border-radius: 0px 30px 0px 30px; color: #000000;"
+                class="property-list shadow">
+                <div class="image"><img src="" class="life1" th:src="@{/image/RP2.jpg}"/>
+                  <img style="width:100%;  border-radius: 0px 30px 0px 30px; overflow: hidden;margin-bottom: 10px;"
+                    src="RP6.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">Rs.50-90Lakh</h4>
+                </div>
+                <div class="d.flex justify-content-between">
+                  <div class="item">
+                    <h4 class="h5 m-O">Home</h4>
+                    <p style="font-weight:500;" class="m-O">Delhi,India</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mr-2 align-self-center"></i>
+                    <span class="mr-3">3</span>
+                    <i class="fas fa-bath mr-2 align-self-center"></i>
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div style="padding: 10px;background-color: #ffffff; border-radius: 0px 30px 0px 30px; color: #000000;"
+                class="property-list shadow">
+                <div class="image"><img src="" class="life1" th:src="@{/image/RP3.jpg}"/>
+                  <img style="width:100%;  border-radius: 0px 30px 0px 30px; overflow: hidden;margin-bottom: 10px;"
+                    src="RP9.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">Rs.65Lakh</h4>
+                </div>
+                <div class="d.flex justify-content-between">
+                  <div class="item">
+                    <h4 class="h5 m-O">Home</h4>
+                    <p style="font-weight:500;" class="m-O">Bengaluru,India</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mr-2 align-self-center"></i>
+                    <span class="mr-3">4</span>
+                    <i class="fas fa-bath mr-2 align-self-center"></i>
+                    <span>2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div style="padding: 10px;background-color: #ffffff; border-radius: 0px 30px 0px 30px; color: #000000;"
+                class="property-list shadow">
+                <div class="image"><img src="" class="life1" th:src="@{/image/RP4.jpg}"/>
+                  <img style="width:100%;  border-radius: 0px 30px 0px 30px; overflow: hidden;margin-bottom: 10px;"
+                    src="RP10.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">Rs.70-85Lakh</h4>
+                </div>
+                <div class="d.flex justify-content-between">
+                  <div class="item">
+                    <h4 class="h5 m-O">Home</h4>
+                    <p style="font-weight:500;" class="m-O">Mumbai,India</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mr-2 align-self-center"></i>
+                    <span class="mr-3">5</span>
+                    <i class="fas fa-bath mr-2 align-self-center"></i>
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---/property listslider here--->
+    </div>
+   
+   </div>
+    <div class="Reant_A_Home" id="Reant_A_Home">
+   <h1><b>Rent a Home</b></h1>
+        <div class="container1">
+      <!---property listslider here--->
+      <div style=" width: 100%;  height: 400px;  margin-top:50px; " id=""
+        class="property-slider">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div style="padding: 10px;background-color: #ffffff; border-radius: 0px 30px 0px 30px; color: #000000;"
+                class="property-list shadow">
+                <div class="image"><img src="" class="life1" th:src="@{/image/home11.jpg}"/>
+                  <img style="width:100%;  border-radius: 0px 30px 0px 30px; overflow: hidden;margin-bottom: 10px;"
+                    src="RP3.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">1,008-1012sq.ft</h4>
+                </div>
+                <div class="d.flex justify-content-between">
+                  <div class="item">
+                    <h4 class="h5 m-O">D5</h4>
+                    <p style="font-weight:500;" class="m-O">San Francisco,California</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mr-2 align-self-center"></i>
+                    <span class="mr-3">2</span>
+                    <i class="fas fa-bath mr-2 align-self-center"></i>
+                    <span>2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div style="padding: 10px;background-color: #ffffff; border-radius: 0px 30px 0px 30px; color: #000000;"
+                class="property-list shadow">
+                <div class="image"><img src="" class="life1" th:src="@{/image/home12.jpg}"/>
+                  <img style="width:100%;  border-radius: 0px 30px 0px 30px; overflow: hidden;margin-bottom: 10px;"
+                    src="RP6.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">2,896sq.ft</h4>
+                </div>
+                <div class="d.flex justify-content-between">
+                  <div class="item">
+                    <h4 class="h5 m-O">Durham</h4>
+                    <p style="font-weight:500;" class="m-O">Austin,Texas</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mr-2 align-self-center"></i>
+                    <span class="mr-3">5</span>
+                    <i class="fas fa-bath mr-2 align-self-center"></i>
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div style="padding: 10px;background-color: #ffffff; border-radius: 0px 30px 0px 30px; color: #000000;"
+                class="property-list shadow">
+                <div class="image"><img src="" class="life1" th:src="@{/image/home13.jpg}"/>
+                  <img style="width:100%;  border-radius: 0px 30px 0px 30px; overflow: hidden;margin-bottom: 10px;"
+                    src="RP9.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">1,555sq.ft</h4>
+                </div>
+                <div class="d.flex justify-content-between">
+                  <div class="item">
+                    <h4 class="h5 m-O">Harrisburg</h4>
+                    <p style="font-weight:500;" class="m-O">Seattle,Washington</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mr-2 align-self-center"></i>
+                    <span class="mr-3">4</span>
+                    <i class="fas fa-bath mr-2 align-self-center"></i>
+                    <span>2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div style="padding: 10px;background-color: #ffffff; border-radius: 0px 30px 0px 30px; color: #000000;"
+                class="property-list shadow">
+                <div class="image"><img src="" class="life1" th:src="@{/image/home14.jpg}"/>
+                  <img style="width:100%;  border-radius: 0px 30px 0px 30px; overflow: hidden;margin-bottom: 10px;"
+                    src="RP10.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">1,817sq.ft</h4>
+                </div>
+                <div class="d.flex justify-content-between">
+                  <div class="item">
+                    <h4 class="h5 m-O">Dover</h4>
+                    <p style="font-weight:500;" class="m-O">Colorado Springs,Colorado</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mr-2 align-self-center"></i>
+                    <span class="mr-3">3</span>
+                    <i class="fas fa-bath mr-2 align-self-center"></i>
+                    <span>2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---/property listslider here--->
+    </div>
+   </div>
+  
+   
+   
+  
+   
+ <div class="Recomanded_Propertys" id="Recomanded_Propertys">
+   
+   
+   <h1><b>Recommended Properties</b></h1>
+          <div class="container1">
+      <!---property listslider here--->
+      <div style=" width: 100%;  height: 400px;  margin-top:50px; " id=""
+        class="property-slider">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div style="padding: 10px;background-color: #ffffff; border-radius: 0px 30px 0px 30px; color: #000000;"
+                class="property-list shadow">
+                <div class="image"><img src="" class="life1" th:src="@{/image/home7.jpg}"/>
+                  <img style="width:100%;  border-radius: 0px 30px 0px 30px; overflow: hidden;margin-bottom: 10px;"
+                    src="RP3.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">Rs.1-2.5Crore</h4>
+                </div>
+                <div class="d.flex justify-content-between">
+                  <div class="item">
+                    <h4 class="h5 m-O">Exotic Villa</h4>
+                    <p style="font-weight:500;" class="m-O">Goa,India</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mr-2 align-self-center"></i>
+                    <span class="mr-3">5</span>
+                    <i class="fas fa-bath mr-2 align-self-center"></i>
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div style="padding: 10px;background-color: #ffffff; border-radius: 0px 30px 0px 30px; color: #000000;"
+                class="property-list shadow">
+                <div class="image"><img src="" class="life1" th:src="@{/image/home2.jpg}"/>
+                  <img style="width:100%;  border-radius: 0px 30px 0px 30px; overflow: hidden;margin-bottom: 10px;"
+                    src="RP6.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">Rs.2-2.8Crore</h4>
+                </div>
+                <div class="d.flex justify-content-between">
+                  <div class="item">
+                    <h4 class="h5 m-O">Sneha Villa</h4>
+                    <p style="font-weight:500;" class="m-O">Gurgaon,India</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mr-2 align-self-center"></i>
+                    <span class="mr-3">5</span>
+                    <i class="fas fa-bath mr-2 align-self-center"></i>
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div style="padding: 10px;background-color: #ffffff; border-radius: 0px 30px 0px 30px; color: #000000;"
+                class="property-list shadow">
+                <div class="image"><img src="" class="life1" th:src="@{/image/images3.jpg}"/>
+                  <img style="width:100%;  border-radius: 0px 30px 0px 30px; overflow: hidden;margin-bottom: 10px;"
+                    src="RP9.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">Rs.3-5Crore</h4>
+                </div>
+                <div class="d.flex justify-content-between">
+                  <div class="item">
+                    <h4 class="h5 m-O">Guru Villa</h4>
+                    <p style="font-weight:500;" class="m-O">Mohali,India</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mr-2 align-self-center"></i>
+                    <span class="mr-3">5</span>
+                    <i class="fas fa-bath mr-2 align-self-center"></i>
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div style="padding: 10px;background-color: #ffffff; border-radius: 0px 30px 0px 30px; color: #000000;"
+                class="property-list shadow">
+                <div class="image"><img src="" class="life1" th:src="@{/image/images4.jpg}"/>
+                  <img style="width:100%;  border-radius: 0px 30px 0px 30px; overflow: hidden;margin-bottom: 10px;"
+                    src="RP10.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">Rs.4-6Crore</h4>
+                </div>
+                <div class="d.flex justify-content-between">
+                  <div class="item">
+                    <h4 class="h5 m-O">Amritha Apartments</h4>
+                    <p style="font-weight:500;" class="m-O">Chennai,India</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mr-2 align-self-center"></i>
+                    <span class="mr-3">5</span>
+                    <i class="fas fa-bath mr-2 align-self-center"></i>
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---/property listslider here--->
+    </div>
+   
+   </div>
+    <div class="Handpicked_Residential_Projects" id="Handpicked_Residential_Projects">
+   <h1><b>Affordable Residential Projects</b></h1>
+            <div class="container1">
+      <!---property listslider here--->
+      <div style=" width: 100%;  height: 400px;  margin-top:50px; " id=""
+        class="property-slider">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div style="padding: 10px;background-color: #ffffff; border-radius: 0px 30px 0px 30px; color: #000000;"
+                class="property-list shadow">
+                <div class="image"><img src="" class="life1" th:src="@{/image/home1.jpg}"/>
+                  <img style="width:100%;  border-radius: 0px 30px 0px 30px; overflow: hidden;margin-bottom: 10px;"
+                    src="RP3.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">Rs.40-50Lakhs</h4>
+                </div>
+                <div class="d.flex justify-content-between">
+                  <div class="item">
+                    <h4 class="h5 m-O">H5</h4>
+                    <p style="font-weight:500;" class="m-O">Surat,India</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mr-2 align-self-center"></i>
+                    <span class="mr-3">2</span>
+                    <i class="fas fa-bath mr-2 align-self-center"></i>
+                    <span>2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div style="padding: 10px;background-color: #ffffff; border-radius: 0px 30px 0px 30px; color: #000000;"
+                class="property-list shadow">
+                <div class="image"><img src="" class="life1" th:src="@{/image/home2.jpg}"/>
+                  <img style="width:100%;  border-radius: 0px 30px 0px 30px; overflow: hidden;margin-bottom: 10px;"
+                    src="RP6.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">Rs.35-50Lakhs</h4>
+                </div>
+                <div class="d.flex justify-content-between">
+                  <div class="item">
+                    <h4 class="h5 m-O">H4</h4>
+                    <p style="font-weight:500;" class="m-O">Jaipur,India</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mr-2 align-self-center"></i>
+                    <span class="mr-3">3</span>
+                    <i class="fas fa-bath mr-2 align-self-center"></i>
+                    <span>2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div style="padding: 10px;background-color: #ffffff; border-radius: 0px 30px 0px 30px; color: #000000;"
+                class="property-list shadow">
+                <div class="image"><img src="" class="life1" th:src="@{/image/home3.jpg}"/>
+                  <img style="width:100%;  border-radius: 0px 30px 0px 30px; overflow: hidden;margin-bottom: 10px;"
+                    src="RP9.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">Rs.40-60Lakhs</h4>
+                </div>
+                <div class="d.flex justify-content-between">
+                  <div class="item">
+                    <h4 class="h5 m-O">H1</h4>
+                    <p style="font-weight:500;" class="m-O">Chandigarh,India</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mr-2 align-self-center"></i>
+                    <span class="mr-3">2</span>
+                    <i class="fas fa-bath mr-2 align-self-center"></i>
+                    <span>2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div style="padding: 10px;background-color: #ffffff; border-radius: 0px 30px 0px 30px; color: #000000;"
+                class="property-list shadow">
+                <div class="image"><img src="" class="life1" th:src="@{/image/home4.jpg}"/>
+                  <img style="width:100%;  border-radius: 0px 30px 0px 30px; overflow: hidden;margin-bottom: 10px;"
+                    src="RP10.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">Rs.35-55Lakhs</h4>
+                </div>
+                <div class="d.flex justify-content-between">
+                  <div class="item">
+                    <h4 class="h5 m-O">H6</h4>
+                    <p style="font-weight:500;" class="m-O">Madurai,India</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mr-2 align-self-center"></i>
+                    <span class="mr-3">5</span>
+                    <i class="fas fa-bath mr-2 align-self-center"></i>
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---/property listslider here--->
+    </div>
+   </div>
+    <div class="Rental_Homes_for_Everyone" id="Rental_Homes_for_Everyone">
+   <h1><b>Exciting Plots</b></h1>
+             <div class="container1">
+      <!---property listslider here--->
+      <div style=" width: 100%;  height: 400px;  margin-top:50px; " id=""
+        class="property-slider">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div style="padding: 10px;background-color: #ffffff; border-radius: 0px 30px 0px 30px; color: #000000;"
+                class="property-list shadow">
+                <div class="image"><img src="" class="life1" th:src="@{/image/RP10.jpg}"/>
+                  <img style="width:100%;  border-radius: 0px 30px 0px 30px; overflow: hidden;margin-bottom: 10px;"
+                    src="RP3.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">Rs.20-45Lakhs</h4>
+                </div>
+                <div class="d.flex justify-content-between">
+                  <div class="item">
+                    <h4 class="h5 m-O">P1</h4>
+                    <p style="font-weight:500;" class="m-O">Hambantota,SriLanka</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mr-2 align-self-center"></i>
+                    <span class="mr-3">5</span>
+                    <i class="fas fa-bath mr-2 align-self-center"></i>
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div style="padding: 10px;background-color: #ffffff; border-radius: 0px 30px 0px 30px; color: #000000;"
+                class="property-list shadow">
+                <div class="image"><img src="" class="life1" th:src="@{/image/images2.jpg}"/>
+                  <img style="width:100%;  border-radius: 0px 30px 0px 30px; overflow: hidden;margin-bottom: 10px;"
+                    src="RP6.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">Rs.30-45Lakh</h4>
+                </div>
+                <div class="d.flex justify-content-between">
+                  <div class="item">
+                    <h4 class="h5 m-O">P66</h4>
+                    <p style="font-weight:500;" class="m-O">Ranchi,India</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mr-2 align-self-center"></i>
+                    <span class="mr-3">4</span>
+                    <i class="fas fa-bath mr-2 align-self-center"></i>
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div style="padding: 10px;background-color: #ffffff; border-radius: 0px 30px 0px 30px; color: #000000;"
+                class="property-list shadow">
+                <div class="image"><img src="" class="life1" th:src="@{/image/images3.jpg}"/>
+                  <img style="width:100%;  border-radius: 0px 30px 0px 30px; overflow: hidden;margin-bottom: 10px;"
+                    src="RP9.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">Rs.15-50Lakh</h4>
+                </div>
+                <div class="d.flex justify-content-between">
+                  <div class="item">
+                    <h4 class="h5 m-O">P78</h4>
+                    <p style="font-weight:500;" class="m-O">Lucknow,India</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mr-2 align-self-center"></i>
+                    <span class="mr-3">4</span>
+                    <i class="fas fa-bath mr-2 align-self-center"></i>
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div style="padding: 10px;background-color: #ffffff; border-radius: 0px 30px 0px 30px; color: #000000;"
+                class="property-list shadow">
+                <div class="image"><img src="" class="life1" th:src="@{/image/images4.jpg}"/>
+                  <img style="width:100%;  border-radius: 0px 30px 0px 30px; overflow: hidden;margin-bottom: 10px;"
+                    src="RP10.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">Rs.30-60Lakhs</h4>
+                </div>
+                <div class="d.flex justify-content-between">
+                  <div class="item">
+                    <h4 class="h5 m-O">P89</h4>
+                    <p style="font-weight:500;" class="m-O">Colombo,SriLanka</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mr-2 align-self-center"></i>
+                    <span class="mr-3">5</span>
+                    <i class="fas fa-bath mr-2 align-self-center"></i>
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---/property listslider here--->
+    </div>
+       </div>
+   </div>
+ <div class="Handpicked_Commercial_Projects" id="Handpicked_Commercial_Projects">
+   <h1><b>Handpicked Commercial Projects</b></h1>
+
+    <div class="container1">
+      <!---property listslider here--->
+      <div style=" width: 100%;  height: 400px;  margin-top:50px; " id=""
+        class="property-slider">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div style="padding: 10px;background-color: #ffffff; border-radius: 0px 30px 0px 30px; color: #000000;"
+                class="property-list shadow">
+                <div class="image"><img src="" class="life1" th:src="@{/image/images7.jpg}"/>
+                  <img style="width:100%;  border-radius: 0px 30px 0px 30px; overflow: hidden;margin-bottom: 10px;"
+                    src="RP3.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">3850-4000sq.ft</h4>
+                </div>
+                <div class="d.flex justify-content-between">
+                  <div class="item">
+                    <h4 class="h5 m-O">CP35</h4>
+                    <p style="font-weight:500;" class="m-O">Thiruvananthapuram,Kerala</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mr-2 align-self-center"></i>
+                    <span class="mr-3">5</span>
+                    <i class="fas fa-bath mr-2 align-self-center"></i>
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div style="padding: 10px;background-color: #ffffff; border-radius: 0px 30px 0px 30px; color: #000000;"
+                class="property-list shadow">
+                <div class="image"><img src="" class="life1" th:src="@{/image/images2.jpg}"/>
+                  <img style="width:100%;  border-radius: 0px 30px 0px 30px; overflow: hidden;margin-bottom: 10px;"
+                    src="RP6.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">4500-6000sq.ft</h4>
+                </div>
+                <div class="d.flex justify-content-between">
+                  <div class="item">
+                    <h4 class="h5 m-O">CP78</h4>
+                    <p style="font-weight:500;" class="m-O">Vizag,India</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mr-2 align-self-center"></i>
+                    <span class="mr-3">5</span>
+                    <i class="fas fa-bath mr-2 align-self-center"></i>
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div style="padding: 10px;background-color: #ffffff; border-radius: 0px 30px 0px 30px; color: #000000;"
+                class="property-list shadow">
+                <div class="image"><img src="" class="life1" th:src="@{/image/images3.jpg}"/>
+                  <img style="width:100%;  border-radius: 0px 30px 0px 30px; overflow: hidden;margin-bottom: 10px;"
+                    src="RP9.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">5470-7000sq.ft</h4>
+                </div>
+                <div class="d.flex justify-content-between">
+                  <div class="item">
+                    <h4 class="h5 m-O">CP30</h4>
+                    <p style="font-weight:500;" class="m-O">Amaravati,India</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mr-2 align-self-center"></i>
+                    <span class="mr-3">5</span>
+                    <i class="fas fa-bath mr-2 align-self-center"></i>
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div style="padding: 10px;background-color: #ffffff; border-radius: 0px 30px 0px 30px; color: #000000;"
+                class="property-list shadow">
+                <div class="image"><img src="" class="life1" th:src="@{/image/images4.jpg}"/>
+                  <img style="width:100%;  border-radius: 0px 30px 0px 30px; overflow: hidden;margin-bottom: 10px;"
+                    src="RP10.jpg" alt="">
+                </div>
+                <div class="text-right">
+                  <h4 class="h5">5500-7000sq.ft</h4>
+                </div>
+                <div class="d.flex justify-content-between">
+                  <div class="item">
+                    <h4 class="h5 m-O">Palace</h4>
+                    <p style="font-weight:500;" class="m-O">Shimoga,India</p>
+                  </div>
+                  <div class="item d-flex align-self-center">
+                    <i class="fas fa-bed mr-2 align-self-center"></i>
+                    <span class="mr-3">5</span>
+                    <i class="fas fa-bath mr-2 align-self-center"></i>
+                    <span>3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---/property listslider here--->
+    </div>
+    
+ </div>   
+ 
+ <div class="con5">
+ 
+ <div class="container4">
+    <div class="col-md-12mx-auto">
+      <div class="d-flex justify-content-between">
+        <div style="padding: 20px 30px;text-align: center;border-radius: 0px 30px 0px 30px;margin: 10px" class="shadow servise-show">
+          <i style="padding:20px ; width:62px;background-color:#cccccc; color:blue;font-size:20px;text-align:center;border-radius:100px;margin-bottom: 10px;" class="fas fa-user"></i>
+          <h4 class="h5">Make Your Dream True</h4>
+          <p style= "font-size: 14px; font-weight: 400;">Lorem ipsum dolor sit amet consectetur,officimaiores ipsam!</p>
+        </div>
+        <div  style="padding: 20px 30px; text-align: center;border-radius: 0px 30px 0px 30px;margin: 10px;"class="shadow servise-show">
+          <i style="padding:20px ; width:62px;background-color:#cccccc; color:blue;font-size:20px;text-align:center;border-radius:100px;margin-bottom: 10px;" class="fas fa-desktop"></i>        
+          <h4 class="h5">Start Your Membership</h4>
+          <p  style= "font-size: 14px; font-weight: 400;">Lorem ipsum dolor sit amet consectetur,officimaiores ipsam!</p>
+        </div>
+        <div style="padding: 20px 30px;text-align: center;border-radius: 0px 30px 0px 30px;margin: 10px" class="shadow servise-show">
+          <i style="padding:20px ; width:62px;background-color:#cccccc;  color:blue;font-size:20px;text-align:center;border-radius:100px;margin-bottom: 10px;" class="fas fa-home"></i>
+       
+          <h4 class="h5">Enjoy Your New Home</h4>
+          <p style= "font-size: 14px; font-weight: 400;">Lorem ipsum dolor sit amet consectetur,officimaiores ipsam!</p>
+        </div>
+     
+      </div>
+    </div>
+  </div>
+ </div>
+ 
+
+  <div class="prefinal"> 
+  <div class="par">
+      <div class="bhk1">
+            <div class="par1"><img src="" class="life1" th:src="@{/image/1bhk.jpg}"/>
+            <h1 class="qwe">1BHK</h1>
+            </div>
+      </div>
+      <div class="bhk2">
+       <div class="par1"><img src="" class="life1" th:src="@{/image/2bhk.jpg}"/>
+       <h1 class="qwe">2BHK</h1>
+            </div>
+      </div>
+      <div class="bhk3">
+         <div class="par1"><img src="" class="life1" th:src="@{/image/3bhk.png}"/>
+         <h1 class="qwe">3BHK</h1>
+            </div>
+      </div>   
+   </div> </div> 
+   
+   <div class="final" id="final">
+       <h1> About Us</h1><hr color=brown>
+<p> <b>SAMPATTHI</b>,deals with every aspect of the consumers' needs in the real estate industry. It is an online forum where buyers, sellers and brokers/agents can exchange information about real estate properties quickly, effectively and inexpensively. At <b>Sampatthi</b>, you can advertise a property, search for a property, browse through properties and keep yourself updated with the latest news in the reality sector.
+</p><br>
+<h3>Why <b>Sampatthi</b>?</h3>
+<p><b>Sampatthi</b> is planning to spread across 600+ cities in India. In addition to providing an online platform to real estate developers, brokers and property owners for listing their property for sale, purchase or rent, Sampatthi offers advertisement stints such as banners, home page links and project pages to the clients for better visibility and branding in the market.
+
+With the ever-evolving online search behaviour, Sampatthi shares updated information pertinent to real estate activities, assisting prospective buyers to make informed buying decision. We make online property search easier, quicker and smarter!
+</p><br>
+<p>Please write to us at services@sampatthi.com or call us at 1800 00 0000 (09:00 AM to 07:00 PM, Monday to Friday)</p>
+   
+   
+   
+   </div>
+</div>
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+<!---SwiperJs javascript-->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 30,
+  centeredSlides: true,
+})
+</script>
+</body>
+</html>
